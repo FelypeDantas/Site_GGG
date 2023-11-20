@@ -1,0 +1,208 @@
+*{margin: 0; padding: 0;}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container-principal {font-family : 'Verdana'; color: #777;}
+
+header{width: 100%; height: 100px; background-color: #fff; position: relative; top: 0;}
+
+.logo{position: absolute; width: 300px; height: auto;}
+.logo img{width: 90%; margin-left: 10%;}
+
+nav {position: absolute; right: 30px; bottom: 0px;}
+nav ul li {float: left; color: #fff; width: auto; margin: 0.8em; font-size: 1.5em; font-family: 'Verdana'; list-style: none;}
+nav ul li a {text-decoration: none; color : #bbb;}
+nav ul li a:hover{color:#ffa500}
+
+#banner {width: 100%;}
+#banner {width: 100%; margin-bottom: 0; }
+
+.modalDialog{
+   position: fixed;
+   font-family: 'Verdana'; 
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: #ffa500;
+   z-index: 9999;
+   opacity: 0;
+   -webkit-transition: opacity 400ms ease-in; 
+   -moz-transition: opacity 400ms ease-in;
+   transition: opacity 400ms ease-in;
+   pointer-events: none;
+   display: none; 
+}
+
+.modalDialog:target {
+   display: block;
+   opacity: 1;
+   pointer-events: auto;
+}
+
+.modalDialog div{
+  width: 500px;
+  position: relative;
+  margin: 10% auto; 
+  padding: 5px 20px 13px 20px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modalDialog p{
+  margin-top: 5% ;
+  margin-bottom: 5% ;
+}
+
+.modalDialog img{
+  width: 50% ;
+  position: relative ;
+  margin-left: 25% ;
+}
+
+.close{
+   background-color: #606061;
+   color: #FFFFFF;
+   line-height: 25px;
+   position: absolute;
+   right: -12px;
+   text-align: center; 
+   top: -10px;
+   width: 24px;
+   text-decoration: none;
+   font-weight: bold; 
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px; 
+}
+
+.close:hover{
+   background-color: #b50909;
+}
+
+.color-page{background-color: #ddd;}
+
+.img-titulo{ width: 20%; height: auto; margin-bottom: 10px; position: relative; float: left; margin-right: 5%;}
+.img-titulo{ width: 90%; margin-left: 10%; margin-top: 50px;}
+
+footer{width: 100%; height: 18%; background-color: #b87e14; color:#fff; position: relative; float: left; font-family: 'verdana';}
+footer .footer.text{width: 30%; margin: 1%; position: relative; float: left;}
+footer .footer-text a{color: #fff}
+
+#Artes-ghost {width: 75%; position: relative; float: left;}
+#Artes-ghost .config-artes {width: 40%; border: 1px solid #b50909; margin-left: 1.5%; padding: 1%; float: left; margin-top: 30px; background-color: #fff;}
+#Artes-ghost .config-artes img{width: 60%; margin-left: 20%; margin-bottom: 20px;} 
+#Artes-ghost .config-artes p{width: 90%; margin-left: 5%; font-size: 1.2 em; margin-bottom: 20px ; text-align: center;}
+
+
+#Artes-ghost .config-artes p a{color: #111;}
+
+#container-sobre{width: 65%; margin-left: 5%; float: left; position: relative; height: 80%; background-color: #fff; top: 10%;}
+#txt-sobre{ width: 40%; float: left; position: relative; padding: 5%; }
+#txt-sobre p{ width: 100%; position: relative; float:left;}
+#txt-sobre dl{ width: 50%; }
+
+#img-sobre{width: 45%; position: relative; float: left; padding: 2%;}
+#img-sobre img{width:100%;}
+#img-sobre img{width:100%;}
+
+#Musicas-ghost {width: 75%; position: relative; float: left;}
+#Musicas-ghost .config-artes {width: 40%; border: 1px solid #b50909; margin-left: 1.5%; padding: 1%; float: left; margin-top: 30px; background-color: #fff;}
+#Musicas-ghost .config-artes img{width: 60%; margin-left: 20%; margin-bottom: 20px;} 
+#Musicas-ghost .config-artes p{width: 90%; margin-left: 5%; font-size: 1.2 em; margin-bottom: 20px ; text-align: center;}
+#Musicas-ghost .config-artes p a{color: #111; text-align: center;}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 3vw;
+    color:aquamarine;
+}
+
+
+.card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+.tudo > h1 {
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.formulario > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.formulario > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.formulario > input::placeholder{
+    color: #f0ffff94;
+}
+
+.card{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-entrar{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px ;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
